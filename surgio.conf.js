@@ -104,9 +104,9 @@ module.exports = {
      * Surge
      */
     {
-      name: 'Rasping7335.conf', // 新版 Surge
-      template: 'surge_v3',
-      provider: 'flower',
+      name: 'Surge5.conf', // 新版 Surge
+      template: 'surge_v5',
+      provider: 'example',
       categories: [categories.SURGE],
     },
 
@@ -114,9 +114,9 @@ module.exports = {
      * Clash
      */
     {
-      name: 'Flatbed0201.yaml',
-      template: 'openclash',
-      provider: 'flower',
+      name: 'Clash.yaml',
+      template: 'auto_clash',
+      provider: 'example',
       categories: [categories.CLASH],
     },
 
@@ -126,13 +126,13 @@ module.exports = {
     {
       name: 'QX.conf',
       template: 'quantumultx',
-      provider: 'imm',
+      provider: 'example',
       categories: [categories.QUANTUMULT_X],
     },
     {
       name: 'QX_subscribe.conf',
       template: 'quantumultx_subscribe',
-      provider: 'imm',
+      provider: 'example',
       categories: [categories.QUANTUMULT_X_SERVER],
     },
   ],

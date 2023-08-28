@@ -59,11 +59,8 @@ hide-udp = 0
 [Proxy]
 {{ getSurgeNodes(nodeList) }}
 
-{{ getSurgeWireguardNodes(nodeList) }}
-
 [Proxy Group]
 Outside = select, 🇺🇲 US, 🇭🇰 HongKong, 🇸🇬 Singapore, 🇯🇵 Japan, 🇨🇳 Taiwan, DIRECT
-Home = select, DEVICE:HOMEMINI, DEVICE:TV, Unraid WG, DIRECT
 Stream = select, 🇺🇲 US, 🇭🇰 HongKong, 🇸🇬 Singapore, 🇯🇵 Japan, 🇨🇳 Taiwan
 YouTube = select, 🇺🇲 US, 🇭🇰 HongKong, 🇸🇬 Singapore, 🇯🇵 Japan, 🇨🇳 Taiwan
 Netflix = select, 🇺🇲 US, 🇭🇰 HongKong, 🇸🇬 Singapore, 🇯🇵 Japan, 🇨🇳 Taiwan
@@ -79,8 +76,6 @@ AD = select, REJECT, DIRECT
 🇨🇳 Taiwan = url-test, {{ getNodeNames(nodeList, taiwanFilter) }}, url = {{ proxyTestUrl }}, interval = 1200
 
 [Rule]
-#Home
-IP-CIDR,192.168.2.0/16,Home,no-resolve
 DOMAIN-SUFFIX,ipw.cn,DIRECT
 DOMAIN-SUFFIX,test-ipv6.com,DIRECT
 
