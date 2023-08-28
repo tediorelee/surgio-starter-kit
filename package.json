@@ -1,0 +1,16 @@
+{
+  "name": "my-rule-store",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "update": "surgio generate && surgio upload",
+    "start": "node gateway.js"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "@surgio/gateway": "^2.0.1",
+    "surgio": "^3.0.2"
+  }
+}

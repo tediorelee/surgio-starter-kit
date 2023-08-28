@@ -1,0 +1,18 @@
+[build]
+  command = "exit 0"
+  functions = "netlify/functions"
+  publish = "."
+
+[functions]
+  included_files = [
+    "provider/**",
+    "template/**",
+    "*.js",
+    "*.json"
+  ]
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/index"
+  status = 200
+  force = true
