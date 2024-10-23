@@ -60,8 +60,6 @@ dns:
     ipcidr:
       # - 240.0.0.0/4
 
-{% include './snippet/cfw-bypass-rules.tpl' %}
-
 proxies: {{ getClashNodes(nodeList) | json }}
 
 proxy-groups:
@@ -229,25 +227,21 @@ rules:
 
 - PROCESS-NAME,Teams.exe,DIRECT
 
-{{ remoteSnippets.TelegramSG.main('Outside') | clash }}
+{{ remoteSnippets.TelegramSG.main('🇸🇬 Singapore') | clash }}
+{{ remoteSnippets.TelegramNL.main('Proxy') | clash }}
+{{ remoteSnippets.TelegramUS.main('🇺🇲 US') | clash }}
 {{ remoteSnippets.Games.main('Outside') | clash }}
 {{ remoteSnippets.Microsoft.main('DIRECT') | clash }}
 {{ remoteSnippets.Global.main('Outside') | clash }}
-{{ remoteSnippets.Advertising.main('REJECT') | clash }}
-{{ remoteSnippets.Privacy.main('REJECT') | clash }}
 {{ remoteSnippets.Hijacking.main('REJECT') | clash }}
-{{ remoteSnippets.HBO.main('HBO') | clash }}
-{{ remoteSnippets.PrimeVideo.main('Stream') | clash }}
 {{ remoteSnippets.Twitch.main('Stream') | clash }}
 {{ remoteSnippets.Spotify.main('Stream') | clash }}
-{{ remoteSnippets.SoundCloud.main('Stream') | clash }}
 {{ remoteSnippets.YouTubeMusic.main('YouTube') | clash }}
 {{ remoteSnippets.YouTube.main('YouTube') | clash }}
 {{ remoteSnippets.DisneyPlus.main('DisneyPlus') | clash }}
 {{ remoteSnippets.Pornhub.main('Stream') | clash }}
 {{ remoteSnippets.Netflix.main('Netflix') | clash }}
 {{ remoteSnippets.China.main('DIRECT') | clash }}
-{{ remoteSnippets.Unbreak.main('DIRECT') | clash }}
 
 # LAN
 - DOMAIN-SUFFIX,local,DIRECT

@@ -15,82 +15,75 @@ module.exports = {
    * 远程片段
    * 文档：https://surgio.royli.dev/guide/custom-config.html#remotesnippets
    */
-  remoteSnippets: [{
-    url: 'https://raw.githubusercontent.com/LM-Firefly/Rules/master/Microsoft.list',
-    name: 'Microsoft',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list',
-    name: 'China',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list',
-    name: 'Unbreak',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list',
-    name: 'Global',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list',
-    name: 'Advertising',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list',
-    name: 'Privacy',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list',
-    name: 'Hijacking',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/HBO.list',
-    name: 'HBO',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Live/Twitch.list',
-    name: 'Twitch',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Music/Spotify.list',
-    name: 'Spotify',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Music/SoundCloud.list',
-    name: 'SoundCloud',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Music/YouTube-Music.list',
-    name: 'YouTubeMusic',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/DisneyPlus.list',
-    name: 'DisneyPlus',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/Pornhub.list',
-    name: 'Pornhub',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/YouTube.list',
-    name: 'YouTube',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/Netflix.list',
-    name: 'Netflix',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/TelegramSG.list',
-    name: 'TelegramSG',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Ruleset/Clash/Game.list',
-    name: 'Games',
-  },
-  {
-    url: 'https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/Prime-Video.list',
-    name: 'PrimeVideo',
-  },
+  remoteSnippets: [
+    {
+      url: 'https://raw.githubusercontent.com/LM-Firefly/Rules/master/Microsoft.list',
+      name: 'Microsoft',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list',
+      name: 'China',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list',
+      name: 'Global',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list',
+      name: 'Hijacking',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitch.list',
+      name: 'Twitch',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Spotify.list',
+      name: 'Spotify',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTubeMusic.list',
+      name: 'YouTubeMusic',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/DisneyPlus.list',
+      name: 'DisneyPlus',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Pornhub.list',
+      name: 'Pornhub',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list',
+      name: 'YouTube',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Netflix.list',
+      name: 'Netflix',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list',
+      name: 'TelegramSG',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TelegramNL/TelegramNL.list',
+      name: 'TelegramNL',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TelegramUS/TelegramUS.list',
+      name: 'TelegramUS',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/Tartarus2014/For-own-use/master/Ruleset/Clash/Game.list',
+      name: 'Games',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list',
+      name: 'Steam',
+    },
+    {
+      url: 'https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/refs/heads/master/discretion/pcdn.txt',
+      name: 'PCDN',
+    },
   ],
   /**
     * 自定义过滤器
